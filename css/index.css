@@ -1,0 +1,141 @@
+@import url(common.css);
+
+
+
+
+*{box-sizing: border-box;}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #4491C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* trigger */
+.triger{
+    border: 1px solid red;
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+
+.trigger .icon1{
+    color: #fff;
+    font-size: 36px;
+}
+
+.gnb_list .icon2{
+    color: #fff;
+    font-size: 36px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+/* menu */
+
+.gnb_list{
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 500;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.gnb_list li{ 
+    padding: 10px 0;
+    color: #222;
+    margin-left: 60px;
+}
+
+.gnb_list li:nth-child(2){
+    margin-top: 80px
+}
+
+
+.gnb_list li:first-child{
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    z-index: 600;
+}
+
+.gnb_list li:last-child{
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.gnb_list li:last-child h4{
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.gnb_list li:last-child p{
+    float: left;
+}
+
+.gnb_list li a{
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.gnb_list li a:hover:not(.gnb_list_item a):not(.gnb_list li:first-child a){ color: #E8741A;}
+
+.gnb_list .gnb_list_item{
+    color: #5483FD;
+}
+
+.gnb_list li:first-child:hover a{
+    color: #222;
+}
+
+.gnb_list li.close{
+    position: fixed;
+    top: 0;
+    width: 60%;
+    text-align: right;
+    background-color: #4491C5;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
